@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trial</title>
+
+    <!-- External css linking -->
+    <link rel="stylesheet" href="./css/hompage2.css">
+
+    <!-- font awesome library linking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- poppins font linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
+    <!-- Responsive web design code starts here -->
+    <style>
+        @media only screen and (max-width:1300px) and (min-width:768px) {
+            .fhdr {
+                grid-template-columns: repeat(1, 2fr);
+            }
+
+            .fhdrs1 ul {
+                display: flex;
+                align-items: start;
+            }
+
+            .fhdrs1 ul li {
+                padding: 3px;
+            }
+
+            .scndhder {
+                grid-template-columns: repeat(1, 3fr);
+            }
+
+            .aitlogo img {
+                width: 400px;
+                height: auto;
+            }
+
+            .aitlogo {
+                display: flex;
+                justify-content: center;
+            }
+
+            #mbnr {
+                width: 100%;
+                height: 300px;
+            }
+
+            .heroimg img {
+                width: auto;
+                height: 300px;
+            }
+
+            #fontitl {
+                font-size: 20px;
+            }
+
+            #fontitl2 {
+                font-size: 20px;
+            }
+
+            #font2 {
+                font-size: 40px;
+            }
+
+            #shop {
+                width: 90px;
+                height: 30px;
+                font-size: smaller;
+                position: relative;
+                top: -10px;
+            }
+
+            .catcards {
+                grid-template-columns: repeat(1, 3fr);
+            }
+
+            .catcont1,
+            .catcont2,
+            .catcont3 {
+
+                position: absolute;
+                right: 8px;
+                top: 4px;
+            }
+
+            .lstprod {
+                grid-template-columns: repeat(1, 2fr);
+            }
+
+            .products {
+                grid-template-columns: repeat(2, 3fr);
+            }
+
+            .cardman {
+                grid-template-columns: repeat(2, 2fr);
+            }
+
+            .crdman2 img {
+                display: none;
+            }
+
+            .collect {
+                grid-template-columns: repeat(2, 3fr);
+            }
+
+            .newslett {
+                grid-template-columns: repeat(1, 2fr);
+            }
+
+            .newletone1 {
+                position: relative;
+                top: -120px;
+                left: 70px;
+            }
+
+            .lock {
+                grid-template-columns: repeat(2, 2fr);
+            }
+
+            .imgs {
+                grid-template-columns: repeat(3, 2fr);
+            }
+
+            footer {
+                grid-template-columns: repeat(2, 2fr);
+
+            }
+
+            .prodstyl p {
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (max-width:767px) and (min-width:425px) {
+            .fhdr {
+                grid-template-columns: repeat(1, 2fr);
+            }
+
+            .fhdrs1 ul {
+                display: flex;
+                align-items: start;
+            }
+
+            .fhdrs1 ul li {
+                padding: 3px;
+            }
+
+            .scndhder {
+                grid-template-columns: repeat(1, 3fr);
+            }
+
+            .aitlogo {
+                display: flex;
+                justify-content: center;
+            }
+
+            .aitlogo img {
+                width: 350px;
+                height: auto;
+            }
+
+            #mbnr {
+                width: 170%;
+                height: 300px;
+            }
+
+            .heroimg img {
+                width: auto;
+                height: 300px;
+            }
+
+            #fontitl {
+                font-size: 20px;
+            }
+
+            #fontitl2 {
+                font-size: 20px;
+            }
+
+            #font2 {
+                font-size: 40px;
+            }
+
+            #shop {
+                width: 90px;
+                height: 30px;
+                font-size: smaller;
+                position: relative;
+                top: -10px;
+            }
+
+            .catcards {
+                grid-template-columns: repeat(1, 3fr);
+                width: 150%;
+            }
+
+            .catcont1 p {
+                font-size: 35px;
+            }
+
+            .catcont2 p {
+                font-size: 35px;
+            }
+
+            .catcont3 p {
+                font-size: 35px;
+            }
+
+            .catcont1 button {
+                width: 190px;
+                height: 60px;
+                font-size: 22px;
+            }
+
+            .catcont3 button {
+                width: 190px;
+                height: 60px;
+                font-size: 22px;
+            }
+
+            #disc {
+                font-size: 35px;
+            }
+
+            #cat {
+                margin-left: 60px
+            }
+
+            .lstprod {
+                grid-template-columns: repeat(1, 2fr);
+            }
+
+            .lstprod ul li {
+                font-size: 25px;
+                padding: 5px;
+            }
+
+            .products {
+                grid-template-columns: repeat(1, 6fr);
+                width: 120%;
+
+            }
+
+            .cardman {
+                grid-template-columns: repeat(1, 3fr);
+                margin-bottom: 200px
+            }
+
+            .crdman2 img {
+                display: none;
+            }
+
+            .collect {
+                grid-template-columns: repeat(2, 2fr);
+            }
+
+            .newslett {
+                grid-template-columns: repeat(1, 2fr);
+                width: 130%;
+            }
+
+            .newletone1 {
+                position: relative;
+                top: -120px;
+                left: 70px;
+            }
+
+            .lock {
+                grid-template-columns: repeat(1, 3fr);
+            }
+
+            .imgs {
+                grid-template-columns: repeat(2, 3fr);
+                width: 150%;
+            }
+
+            footer {
+                grid-template-columns: repeat(1, 4fr);
+                width: 130%;
+
+            }
+        }
+
+        @media only screen and (max-width:425px) {
+
+            .fhdr {
+                grid-template-columns: repeat(1, 2fr);
+                width: 190%;
+            }
+
+            .fhdrs1 ul {
+                display: flex;
+                align-items: start;
+            }
+
+            .fhdrs1 ul li {
+                padding: 3px;
+            }
+
+            .scndhder {
+                grid-template-columns: repeat(1, 3fr);
+                width: 190%;
+            }
+
+            .aitlogo {
+                display: flex;
+                justify-content: center;
+            }
+
+            .aitlogo img {
+                width: 350px;
+                height: auto;
+            }
+
+            #mbnr {
+                width: 190%;
+                height: 300px;
+            }
+
+            .heroimg img {
+                width: auto;
+                height: 300px;
+            }
+
+            #fontitl {
+                font-size: 20px;
+            }
+
+            #fontitl2 {
+                font-size: 20px;
+            }
+
+            #font2 {
+                font-size: 40px;
+            }
+
+            #shop {
+                width: 90px;
+                height: 30px;
+                font-size: smaller;
+                position: relative;
+                top: -10px;
+            }
+
+            .catcards {
+                grid-template-columns: repeat(1, 3fr);
+                width: 150%;
+            }
+
+            .catcont1 p {
+                font-size: 35px;
+            }
+
+            .catcont2 p {
+                font-size: 35px;
+            }
+
+            .catcont3 p {
+                font-size: 35px;
+            }
+
+            .catcont1 button {
+                width: 190px;
+                height: 60px;
+                font-size: 22px;
+            }
+
+            .catcont3 button {
+                width: 190px;
+                height: 60px;
+                font-size: 22px;
+            }
+
+            #disc {
+                font-size: 35px;
+            }
+
+            #cat {
+                margin-left: 60px
+            }
+
+            .lstprod {
+                grid-template-columns: repeat(1, 2fr);
+            }
+
+            .lstprod ul li {
+                font-size: 25px;
+                padding: 5px;
+            }
+
+            .products {
+                grid-template-columns: repeat(1, 6fr);
+                width: 120%;
+            }
+
+            .cardman {
+                grid-template-columns: repeat(1, 3fr);
+            }
+
+            .crdman2 img {
+                display: none;
+            }
+
+            .collect {
+                grid-template-columns: repeat(1, 3fr);
+            }
+
+            .newslett {
+                grid-template-columns: repeat(1, 2fr);
+                width: 150%;
+            }
+
+            .newletone1 {
+                position: relative;
+                top: -130px;
+                left: 70px;
+            }
+
+            .lock {
+                grid-template-columns: repeat(1, 3fr);
+            }
+
+            .imgs {
+                grid-template-columns: repeat(1, 6fr);
+                width: 150%;
+            }
+
+            footer {
+                grid-template-columns: repeat(1, 4fr);
+                width: 130%;
+            }
+        }
+    </style>
+
+    <!-- Responsive web design code ends here -->
+
+</head>
+
+<body>
+    <!-- First Header Starts -->
+
+    <header class="fhdr">
+        <section class="fhdrs1">
+            <ul>
+                <li class="hdrimg"><img src="./images/icon/header_icon - Copy.png" alt="header_icon"></li>
+                <li>IND</li>
+                <li><i class="fa-solid fa-angle-down"></i></li>
+                <li>918431040457</li>
+            </ul>
+        </section>
+        <section class="fhdrs2">
+            <ul>
+                <li>My Account</li>
+                <li>Wishlist</li>
+                <li>Shopping</li>
+                <li>Cart</li>
+                <li>Checkout</li>
+            </ul>
+        </section>
+    </header>
+
+    <!-- First header Ends -->
+    <br>
+    <!-- Second header Starts -->
+
+    <header class="scndhder">
+        <section class="aitlogo">
+            <img src="./images/logo/Logo.png" alt="aitlogo">
+        </section>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Category</a>
+                </li>
+                <li>
+                    <a href="#">Latest</a><sup id="hot">HOT</sup>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Pages</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="iconbar">
+            <ul>
+                <li>
+                    <input type="text" placeholder="Search products" id="searchbox">
+                    <span id="mgglass"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </li>
+                <li id="heartstyle2">
+                    <span id="heartstyle"><i class="fa-solid fa-heart"></i></span>
+                    <sup id="heartstyle3">02</sup>
+                </li>
+                <li id="cartstyle2">
+                    <span id="cartstyle"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <sup id="cartstyle3">02</sup>
+                </li>
+                <li>
+                    <button id="btnstyle">Sign In</button>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <!-- Second header Ends -->
+
+    <!-- Banner section starts -->
+
+    <main id="mbnr">
+        <div class="heroimg">
+            <img src="./images/hero/hero_man.png" alt="hero">
+        </div>
+        <div class="lineheight">
+            <i id="fontitl">60% discount</i>
+            <p id="font2">Winter</p>
+            <p id="font2">Collection</p>
+            <p id="fontitl2">Best cloth collection by 2020</p>
+            <br>
+            <button id="shop">Shop Now</button>
+        </div>
+    </main>
+
+    <!-- Banner section ends -->
+
+    <!-- Shop By Category section Starts -->
+
+    <h2 id="cat">Shop By Category</h2>
+
+    <section class="catcards">
+        <div class="imgcards">
+            <div>
+                <img src="./images/categori/cat1.jpg" alt="cat1">
+            </div>
+            <div class="catcont1">
+                <p>Owmen'S</p>
+                <button class="deal">Best New Deals</button>
+                <p class="newcol">New collection</p>
+            </div>
+        </div>
+        <div class="imgcards">
+            <img src="./images/categori/cat2.jpg" alt="cat2">
+            <div class="catcont2">
+                <i id="disc">Discount!</i>
+                <p>Winter Cloth</p>
+                <p>New collection</p>
+            </div>
+        </div>
+        <div class="imgcards">
+            <img src="./images/categori/cat3.jpg" alt="cat3">
+            <div class="catcont3">
+                <p>Man's Cloth</p>
+                <button class="deal">Best New Deals</button>
+                <p class="newcol">New collection</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop By Category section ends -->
+
+    <!-- Latest Products Section starts -->
+
+    <section class="lstprod" id="lprod">
+        <div>
+            <h3 id="stylh3">Latest Products</h3>
+        </div>
+        <div id="arrang">
+            <ul>
+                <li id="redsty">All</li>
+                <li>New</li>
+                <li>Featured</li>
+                <li>Offer</li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <br>
+    <section class="products" id="brdv">
+        <div class="brodiv">
+            <img src="./images/categori/product1.png" alt="cat11">
+            <button class="newb">New</button>
+            <div class="prodstyl">
+                <div><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <p>Green dress with details</p>
+                <div>
+                    <span>$40</span>
+                    <span id="strike">$60.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="brodiv">
+            <img src="./images/categori/product2.png" alt="cat11">
+            <div class="prodstyl">
+                <div><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <p>Green dress with details</p>
+                <div>
+                    <span>$40</span>
+                    <span id="strike">$60.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="brodiv">
+            <img src="./images/categori/product3.png" alt="cat11">
+            <button class="newb">New</button>
+            <div class="prodstyl">
+                <div><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <p>Green dress with details</p>
+                <div>
+                    <span>$40</span>
+                    <span id="strike">$60.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="brodiv">
+            <img src="./images/categori/product4.png" alt="cat11">
+            <div class="prodstyl">
+                <div><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <p>Green dress with details</p>
+                <div>
+                    <span>$40</span>
+                    <span id="strike">$60.00</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="brodiv">
+            <img src="./images/categori/product5.png" alt="cat11">
+            <div class="prodstyl">
+                <div><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <p>Green dress with details</p>
+                <div>
+                    <span>$40</span>
+                    <span id="strike">$60.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="brodiv">
+            <img src="./images/categori/product6.png" alt="cat11">
+            <button class="newb">New</button>
+            <div class="prodstyl">
+                <div><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i></div>
+                <p>Green dress with details</p>
+                <div>
+                    <span>$40</span>
+                    <span id="strike">$60.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- Latest Products Section ends -->
+
+    <!-- Cardman section Starts -->
+
+    <section class="cardman" id="crdm">
+        <div class="crdman">
+            <img src="./images/categori/card-man.png" alt="cardman">
+        </div>
+        <div class="crdcont">
+            <h3>Find the Best Product from Our Shop</h3>
+            <p>Designers who are interested creating state of</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="crdman2">
+            <img src="./images/categori/card-shape.png" alt="cardman">
+        </div>
+    </section>
+    <br>
+    <!-- Cardman section Ends -->
+
+    <!-- Best Collection Section starts -->
+
+    <section class="collect">
+        <div class="firssec">
+            <h3>Best Collection of this Month</h3>
+            <p>Designers who are interested to</p>
+            <button>Shop Now</button>
+            <p><img src="./images/collection/collection1.png" alt="">
+            </p>
+        </div>
+        <div class="secsec">
+            <img src="./images/collection/collection2.png" alt="">
+        </div>
+        <div class="trdsect">
+            <div>
+                <span>Menz Winter Jacket</span>
+                <span>
+                    <img src="./images/collection/collection3.png" alt="">
+                </span>
+            </div>
+            <div>
+                <span class="menwin">Menz Winter Jacket</span>
+                <span>
+                    <img src="./images/collection/collection4.png" alt="">
+                </span>
+            </div>
+            <span>Menz Winter Jacket</span>
+            <span>
+                <img src="./images/collection/collection5.png" alt="">
+            </span>
+        </div>
+    </section>
+    <br>
+    <!-- Best Collection Section Ends -->
+
+    <!-- Newsletter Section starts--->
+
+    <section class="newslett" id="nelet">
+        <div class="newletone">
+            <h4>Get Our Latest Offers News</h4>
+            <p>Subscribe News Latter</p>
+        </div>
+        <div class="newletone1" id="overlap">
+            <input type="text" placeholder="Your email here">
+            <button>Shop Now</button>
+        </div>
+        <!-- Newsletter Section Ends--->
+
+    </section>
+    <br>
+    <!-- Logo section starts -->
+
+    <section class="lock">
+        <div class="lock1">
+            <span><i class="fa-solid fa-truck-fast fa-lg"></i></span>
+            <h4>Free Shipping Method</h4>
+            <p> Enim nesciunt cum voluptas corrupti saepe tempora unde eveniet praesentium veritatis!</p>
+        </div>
+        <div class="lock1">
+            <span><i class="fa-solid fa-repeat fa-lg"></i></i></span>
+            <h4>Secure payment system</h4>
+            <p> Enim nesciunt cum voluptas corrupti saepe tempora unde eveniet praesentium veritatis!</p>
+        </div>
+        <div class="lock1">
+            <span><i class="fa-solid fa-unlock fa-lg"></i></i></i></span>
+            <h4>Secure payment system</h4>
+            <p> Enim nesciunt cum voluptas corrupti saepe tempora unde eveniet praesentium veritatis!</p>
+        </div>
+    </section>
+    <br>
+    <!-- Logo section ends-->
+
+    <!-- Image section  Starts-->
+    <section class="imgs">
+        <img src="./images/gallery/gallery1.jpg" alt="">
+        <img src="./images/gallery/gallery2.jpg" alt="">
+        <img src="./images/gallery/gallery3.jpg" alt="">
+        <img src="./images/gallery/gallery4.jpg" alt="">
+        <img src="./images/gallery/gallery5.jpg" alt="">
+    </section>
+    <!-- Image section  ends-->
+
+    <!-- Footer section starts -->
+    <br>
+    <footer id="ftstyle">
+        <section class="stylsec">
+            <img src="https://www.achieversit.com/assets/images/AIT-white.jpg" alt="logo">
+            <p>#63, 1st Floor, 16th Main, 8th Cross,BTM 1st Stage, Bangalore, India - 560029</p>
+            <p>India : +91 8431-040-457</p>
+            <p>info@achieversit.com</p>
+        </section>
+        <section class="stylsec">
+            <h2>Quick Links</h2>
+            <ul class="stylfoot">
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Offers & Discounts</li>
+                <li><a href="#"></a>Get Coupon</li>
+                <li> <a href="#"></a>Contact us</li>
+            </ul>
+        </section>
+        <section class="stylsec">
+            <h2>New Products</h2>
+            <ul class="stylfoot">
+                <li>Woman cloth</li>
+                <li>Fashion Accessories</li>
+                <li>Man Accessories</li>
+                <li>Man Made Toy</li>
+                <li>Rubber Made Toys</li>
+            </ul>
+        </section>
+        <section class="stylsec">
+            <h2>Support</h2>
+            <ul class="stylfoot">
+                <li>FAQ's</li>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Privacy Policy</li>
+                <li>Report a payment Issue</li>
+            </ul>
+        </section>
+    </footer>
+
+    <!-- Footer section ends -->
+
+    <blockquote class="bmar">
+        <span>Copyright@ 2023 All rights reserved | This template is made by Shashank
+            V</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <span><i class="fa-brands fa-twitter">&nbsp</i>&nbsp<i class="fa-brands fa-facebook"></i>&nbsp<i
+                class="fa-brands fa-instagram"></i>&nbsp<i class="fa-brands fa-github"></i></span>
+    </blockquote>
+
+</body>
+
+</html>
